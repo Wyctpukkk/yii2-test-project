@@ -1,6 +1,9 @@
 <?
 
 use yii\helpers\Url;
+use yii\helpers\Html;
+
+echo Html::a("Отправить форму", ['articles/forms'], ['class' => 'btn btn-success']);
 ?>
 
 

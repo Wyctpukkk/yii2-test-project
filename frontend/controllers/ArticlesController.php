@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use app\models\Articles;
+use app\models\Forms;
 use yii\data\ActiveDataProvider;
 
 
@@ -132,5 +133,17 @@ class ArticlesController extends Controller
         $model = Articles::findOne($id);
         if ($model) $model->delete();
         return $this->redirect(['crud']);
+    }
+
+    public function actionForms()
+    {
+        $model = new Forms();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->save();
+            return $this->redirect(['index']);
+        }
+        return $this->render('forms', [
+            'model' => $model
+        ]);
     }
 }

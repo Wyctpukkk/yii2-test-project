@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Class m230210_083213_form
+ * Class m230210_091339_forms
  */
-class m230210_083213_form extends Migration
+class m230210_091339_forms extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('form', [
+        $this->createTable('forms', [
             'id' => $this->primaryKey(),
             'name' => $this->string(30),
             'prename' => $this->string(30),
@@ -26,7 +26,7 @@ class m230210_083213_form extends Migration
      */
     public function safeDown()
     {
-        echo "m230210_083213_form cannot be reverted.\n";
+        echo "m230210_091339_forms cannot be reverted.\n";
 
         return false;
     }
@@ -40,7 +40,7 @@ class m230210_083213_form extends Migration
 
     public function down()
     {
-        echo "m230210_083213_form cannot be reverted.\n";
+        echo "m230210_091339_forms cannot be reverted.\n";
 
         return false;
     }
