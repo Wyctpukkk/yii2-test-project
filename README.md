@@ -1,60 +1,21 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+## Тестовая задача yii2
+___
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+### :white_check_mark: 1.Развернуть проект yii2 advanced на локальной машине 
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+### :white_check_mark: 2.	Настроить ЧПУ
+### :white_check_mark: 3.	Настроить подключение к базе данных, выполнить миграции
+### :white_check_mark: 4.	Написать миграцию по созданию таблицы новостей (с произвольными полями)
+###  :red_circle: 5.Сделать небольшой произвольный crud для данной таблицы в разделе backend приложения
+К сожалению не смог разобраться с админкой, создал crud во фронтенде.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+### :white_check_mark:6.	Подключить wysiwyg редактор (плагин, любой) к полю контента в CRUD новости
+### :red_circle: 7.	Сделать доступ к backend контроллерам только для зарегистрированных пользователей
+Из-за проблем с админкой не смог реализовать 5пункт, хотя логика в принципе понятна, проверить на isGuest и дать допуск до контроллера.
+### :white_check_mark: 8.	Создать контроллер во frontend с любым названием. Сделать action index в данном контроллере, который будет получать все новости из БД, и выводить их в виде списком. Использовать методы ActiveRecord для получения данных из БД
+### :white_check_mark: 9.	Создать страницу просмотра новости по полученному ключу из БД, динамическую страницу
+### :white_check_mark:   10.	В ранее созданном контроллере сделать еще 1 action, который будет работать с формой ActiveForm и принимать пользовательские данные (фио, телефон, почта). При написании класса формы – задать правила валидации в соответствующем методе.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+___
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
-
-DIRECTORY STRUCTURE
--------------------
-
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+Не хватило двух дней для того чтобы разобраться в yii2 до конца, но считаю хорошая практика и хороший результат работы за 2 дня, учитывая что я не был ранее знаком с фреймфорком yii2.
